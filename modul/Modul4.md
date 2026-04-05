@@ -2,7 +2,7 @@
 title: Modul 4
 description: 
 published: true
-date: 2026-04-05T18:00:55.481Z
+date: 2026-04-05T18:01:09.769Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-05T17:20:34.207Z
@@ -109,7 +109,8 @@ Dari permintaan dns tersebut jenis dari request tersebut adalah `Queries` dan ti
 3. Periksa pesan balasan DNS. Apa nama server MIT yang diberikan oleh pesan balasan? Apakah pesan balasan ini juga memberikan alamat IP untuk server MIT tersebut?
 ![mit.ns.2.png](/assets/modul4/mit.ns.2.png)
 Dapat dilihat pada jawaban dari dns. dia hanya mengembalikan `Nameserver` dan tidak memberikan ip dari server tersebut
-
+&nbsp;
+&nbsp;
 ### nslookup www.aiit.or.kr bitsy.mit.edu
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut merupakan default alamat IP server DNS lokal Anda?
 ![bitsy.1.png](/assets/modul4/bitsy.1.png)
