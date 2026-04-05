@@ -2,7 +2,7 @@
 title: Modul 4
 description: 
 published: true
-date: 2026-04-05T17:21:07.741Z
+date: 2026-04-05T18:00:55.481Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-05T17:20:34.207Z
@@ -79,4 +79,47 @@ dapat dilihat dari request dns kita mendapat alamat `104.16.44.99` ip untuk `www
 dapat dilihat bahwa `http://www.ietf.org` mengirimkan content image melalui https dan menggunakan domain yang sama sehingga dns tidak perlu dipanggil lagi karena konten yang dibutuhkan sudah berada di server yang sama. dapat dilihat untuk content request dilakukaan ke ip `104.16.45.99` sayangnya kita tidak dapat melakukan sniffing packet dikarenakan content di deliver menggunakan protocol https
 &nbsp;
 &nbsp;
-## 4.6 ipconfig
+### nslookup mit.edu
+1. Apa port tujuan pada pesan permintaan DNS? Apa port sumber pada pesan balasan DNS?
+![mit.1.png](/assets/modul4/mit.1.png)
+Dari SS diatas kita dapat lihat port tujuan adalah `53` port sumber adalah `53390` 
+
+2. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut merupakan default alamat IP server DNS lokal Anda?
+![mit.1.png](/assets/modul4/mit.1.png)
+Permintaan DNS dikirimkan ke `1.1.1.1` dan alamat tersebut merupakan default dns dari laptop saya
+
+3. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan tersebut mengandung ”jawaban” atau ”answers”?
+![mit.2.png](/assets/modul4/mit.2.png)
+Dari permintaan dns tersebut jenis dari request tersebut adalah `Queries` dan tidak mengandung jawaban
+
+4. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
+![mit.3.png](/assets/modul4/mit.3.png)
+dari gambar diatas dapat dilihat bahwa permintaan tersebut mengembalikan 1 jawaban dan pada jawaban tersebut mengatakan bahwa `A` record dari `mit.edu` memiliki 1 server utama yang memiliki address `104.68.37.236`
+&nbsp;
+&nbsp;
+### nslookup –type=NS mit.edu
+1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut merupakan default alamat IP server DNS lokal Anda?
+![mit.ns.1.png](/assets/modul4/mit.ns.1.png)
+Permintaan DNS dikirimkan ke `1.1.1.1` dan alamat tersebut merupakan default dns dari laptop saya
+
+2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan tersebut mengandung ”jawaban” atau ”answers”?
+![mit.ns.1.png](/assets/modul4/mit.ns.1.png)
+Dari permintaan dns tersebut jenis dari request tersebut adalah `Queries` dan tidak mengandung jawaban perbedaaan yang terlihat perbedaan adalah `Query Type` yang diminta adalah `NS`
+
+3. Periksa pesan balasan DNS. Apa nama server MIT yang diberikan oleh pesan balasan? Apakah pesan balasan ini juga memberikan alamat IP untuk server MIT tersebut?
+![mit.ns.2.png](/assets/modul4/mit.ns.2.png)
+Dapat dilihat pada jawaban dari dns. dia hanya mengembalikan `Nameserver` dan tidak memberikan ip dari server tersebut
+
+### nslookup www.aiit.or.kr bitsy.mit.edu
+1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut merupakan default alamat IP server DNS lokal Anda?
+![bitsy.1.png](/assets/modul4/bitsy.1.png)
+Permintaan DNS dikirimkan ke `1.1.1.1` dan alamat tersebut merupakan default dns dari laptop saya
+
+2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan tersebut mengandung ”jawaban” atau ”answers”?
+![bitsy.2.png](/assets/modul4/bitsy.2.png)
+Dari permintaan dns tersebut jenis dari request tersebut adalah `Queries` dan tidak mengandung jawaban
+
+
+3. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
+![bitsy.3.png](/assets/modul4/bitsy.3.png)
+Dapat dilihat dari screenshot sebelumnya tidak ada panah yang menunjukan request dan response yang menandakan bahwa `bitsy.mit.edu` mereject request nslookup kita. dapat dibuktikan dengan munculnya error di terminal. Kemungkinan domain `bitsy.mit.edu` tidak lagi menjadi dns server
