@@ -2,7 +2,7 @@
 title: Modul 4
 description: 
 published: true
-date: 2026-04-05T17:20:34.207Z
+date: 2026-04-05T17:21:02.416Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-05T17:20:34.207Z
@@ -12,7 +12,7 @@ dateCreated: 2026-04-05T17:20:34.207Z
 
 ## 4.2 Nslookup
 1. Jalankan nslookup untuk mendapatkan alamat IP dari server web di Asia. Berapa alamat IP server tersebut?
-![4.2.1.1.png](/assets/modul4/4.2.1.png)
+![4.2.1.1.png](/assets/modul4/4.2.1.1.png)
 Disini saya melakukan nslookup atau mencari info tentang domain `suro.ubaya.ac.id` dan dapat dilihat permintaan lookup saya diberikan oleh alamat `127.0.2.2` yang berasal dari cloudflare warp yang sedang saya gunakan. Bisa di cek dari screenshot dibawah 
 ![4.2.1.2.png](/assets/modul4/4.2.1.2.png)
 &nbsp;
