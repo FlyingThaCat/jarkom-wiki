@@ -1,8 +1,8 @@
 ---
-title: Modul 5 UDP
+title: Modul 5
 description: User Datagram Protocol ?
 published: true
-date: 2026-04-05T18:52:19.026Z
+date: 2026-04-05T18:53:30.425Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-05T18:52:19.026Z
