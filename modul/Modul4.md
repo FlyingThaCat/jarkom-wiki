@@ -2,7 +2,7 @@
 title: Modul 4
 description: 
 published: true
-date: 2026-04-05T17:21:02.416Z
+date: 2026-04-05T17:21:07.741Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-05T17:20:34.207Z
