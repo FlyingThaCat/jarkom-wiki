@@ -2,7 +2,7 @@
 title: Modul 6
 description: 
 published: true
-date: 2026-04-12T15:26:35.791Z
+date: 2026-04-13T08:32:24.756Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-07T12:52:40.505Z
@@ -59,7 +59,7 @@ Throughput dihitung dengan membagi jumlah data yang ditransfer dengan waktu yang
 1. Identifikasi slow start & congestion avoidance
 Fase Slow Start Terjadi pada awal grafik (sekitar 0–±5 detik) dengan ciri2:
 Grafik melengkung naik tajam
-![6.5.1.1.png](/assets/modul6/6.5.1.png)
+![6.5.1.1.png](/assets/modul6/6.5.1.1.png)
 
 Fase Congestion Avoidance Terjadi setelah itu (sekitar >5 detik sampai akhir) dengan ciri2:
 Grafik mulai lebih lurus (linear)
