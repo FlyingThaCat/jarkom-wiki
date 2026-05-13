@@ -2,7 +2,7 @@
 title: Modul 11
 description: 
 published: true
-date: 2026-05-13T04:29:00.036Z
+date: 2026-05-13T04:29:32.729Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-13T04:29:00.036Z
@@ -19,8 +19,8 @@ dateCreated: 2026-05-13T04:29:00.036Z
 		- IP yang tidak terpakai bisa didaur ulang dan diberikan ke perangkat lain
 	
   - Kekurangan:
-		- Jika DHCP server mati, perangkat baru tidak bisa mendapatkan IP
-		- IP perangkat bisa berubah-ubah setiap koneksi, kurang cocok untuk server atau perangkat yang butuh IP tetap / static
+		-	Jika DHCP server mati, perangkat baru tidak bisa mendapatkan IP
+		-	IP perangkat bisa berubah-ubah setiap koneksi, kurang cocok untuk server atau perangkat yang butuh IP tetap / static
 		- Rentan terhadap serangan seperti DHCP Spoofing, di mana penyerang bisa menyamar jadi DHCP server palsu
 3. DORA
 	- DORA adalah proses 4 tahap yang terjadi saat perangkat meminta IP ke DHCP server.
