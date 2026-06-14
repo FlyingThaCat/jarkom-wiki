@@ -1,8 +1,8 @@
 ---
-title: Modul 14
+title: Modul 13
 description: 
 published: true
-date: 2026-06-14T09:51:57.912Z
+date: 2026-06-14T09:52:31.199Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-14T09:51:57.912Z
