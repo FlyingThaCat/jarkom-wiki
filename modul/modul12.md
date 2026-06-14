@@ -2,7 +2,7 @@
 title: Modul 12
 description: 
 published: true
-date: 2026-06-14T09:31:18.852Z
+date: 2026-06-14T09:31:52.595Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-14T09:23:52.016Z
